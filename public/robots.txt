@@ -1,3 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+Sitemap: https://musabhassan.com/sitemap.xml
+User-Agent: *
+Allow: /
