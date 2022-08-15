@@ -141,15 +141,15 @@ function introAnimations() {
 			<div class="flex-wrapper second">
 				<h1 class = "title">
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord1}>Musab</div>
+						<div class="word" bind:this={titleWord1}>Anurudh</div>
 					</div><br> 
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord2}>Hassan</div>
+						<div class="word" bind:this={titleWord2}>Mhatre</div>
 					</div>
 				</h1>
 				<div class="occupation mask">
 					<p class = "paragraph" bind:this={shortDetails}>
-						web developer from british columbia, canada
+						writing creative solutions, based in India
 					</p>
 				</div>
 				<div class="wrapper action-mask">
@@ -167,7 +167,7 @@ function introAnimations() {
 			</div>
 
 			<div class="parallax-wrapper home-back" bind:this={backgroundContainer}>
-				{#await loadImage("assets/imgs/home-back.jpg") then src}
+				{#await loadImage("https://i.imgur.com/W915dRa.jpg") then src}
 					<img src="{src}" bind:this={backgroundImage} draggable="false" alt="Home Background" style="width:100%; height: 100%; object-fit: cover;">
 				{/await}
 			</div>

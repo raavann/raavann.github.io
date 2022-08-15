@@ -156,15 +156,15 @@ clickableStore.subscribe(value => {
 		-webkit-transition: width 0.5s ease, height 0.5s ease
 
 	&.active .dot
-		width: 4vh
-		height: 4vh
+		width: 22vh
+		height: 22vh
 
 	&.disabled .dot, &.introDisabled .dot
 		width: 0 !important
 		height: 0 !important
 
 	&.hover .dot
-		width: 7.5vh
-		height: 7.5vh
+		width: 4vh
+		height: 4vh
 
 </style>

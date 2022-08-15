@@ -100,15 +100,15 @@ function introAnimations() {
 
         <div class="status-wrapper">
             <p class="large-text" bind:this={statusElem}>
-                i am currently accepting freelance work,<br>you may reach me on my email.
+                i am currently working on my startup idea "Algo-trade"<br>you may reach me on my email and we might work tohether!
             </p>
-            <a class="button large-text" bind:this={fullEmailLinkElem} href="mailto:musabhassan04@gmail.com" target="_blank">musabhassan04@gmail.com</a>
+            <a class="button large-text" bind:this={fullEmailLinkElem} href="mailto:itsraavann@gmail.com" target="_blank">itsraavann@gmail.com</a>
         </div>
         
         <div class="credits-wrapper" bind:this={creditsElem}>
             <p class="year">© {currentYear}</p>
             <p class="credits">
-                designed and developed by musab hassan<br>this webste is open source on github
+                designed and developed by Anurudh Mhatre (raavann)
             </p>
         </div>
     </div>

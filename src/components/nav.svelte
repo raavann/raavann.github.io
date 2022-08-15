@@ -79,10 +79,10 @@ function introAnimations() {
 					<div bind:this={aboutElem} on:click={() => navigate($aboutAnchor)}>About</div>
 				</li>
 				<li class="mobile" bind:this={emailElem}>
-					<a href="mailto:musabhassan04@gmail.com" target="_blank">Email</a>
+					<a href="mailto:itsraavann@gmail.com" target="_blank">Email</a>
 				</li>
 				<li bind:this={githubElem}>
-					<a href="https://github.com/Musab-Hassan" target="_blank">Github</a>
+					<a href="https://github.com/raavann" target="_blank">Github</a>
 				</li>
 			
 		</div>
@@ -124,8 +124,8 @@ function introAnimations() {
 
 	.flex-wrapper.ico
 		overflow: hidden
-		height: 6vh
-		width: 7vh
+		height: 15vh
+		width: 15vh
 		mix-blend-mode: exclusion
 		cursor: pointer
 

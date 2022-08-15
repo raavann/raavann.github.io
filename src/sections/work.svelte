@@ -165,6 +165,8 @@ function adjustLineHeight(node) {
 		class:disabled={currentActive !== null}
 		use:workListIntro={{ promise: inView }}
 	>
+		<h1 style="padding-left: 20px" use:workImageIntro={{ promise: inView, delay: 20 }}>Projects</h1>
+
 		<div class:mobile={$isMobile}>
 			<ul class="work-list" 
 				bind:this={listContainer} 
@@ -180,7 +182,8 @@ function adjustLineHeight(node) {
 								bind:this={ workItems[i] }>
 
 								<div class="img-wrapper">
-									{#await loadImage(`assets/imgs/work-back/${item.id}/cover.jpg`) then src}
+									{#await loadImage(`${item.imgurl}`) then src}
+									<!-- {console.log(src , "\n---gap===\n",`assets/imgs/work-back/${item.id}/cover.jpg`)} -->
 										<img bind:this={images[i]} src="{src}" on:dragstart|preventDefault draggable="false" alt="{item.title} Background">
 									{/await}
 								</div>
@@ -266,10 +269,10 @@ function adjustLineHeight(node) {
 						</div>
 						<div class="roles">
 							<div class="wrapper">
-								<p class="descriptor" in:textAnimationIn out:textAnimationOut>Role</p>
+								<p class="descriptor" in:textAnimationIn out:textAnimationOut>Tech Stacks</p>
 								<ul>
-									{#each data[currentActive].roles as role}
-										<li in:textAnimationIn out:textAnimationOut>{"+ " + role}</li>
+									{#each data[currentActive].TechStack as ts}
+										<li in:textAnimationIn out:textAnimationOut>{"+ " + ts}</li>
 									{/each}
 								</ul>
 							</div>

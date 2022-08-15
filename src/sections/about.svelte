@@ -99,24 +99,29 @@ function section2IntroAnimations() {
 	observer.observe(aboutSection2Container);
 }
 
+
 </script>
+	
 
 <div id="content-container" class="about" bind:this={aboutSection1Container}>
+	<h1 style="padding-left: 20px" class:active={allowParagraphDecoratorAnimation}>About</h1>
+
 	<div class="content-wrapper">
-		<h1 class = "title" bind:this={title}>The Name's<br>Musab</h1>
+		<p class="smallText" style="text-align: left;">Hie there, I'm </p><br><h1 class = "title" bind:this={title}>raavann</h1> <br> <p class="smallText">it's my pen-name</p>
 		<p class = "paragraph" class:active={allowParagraphDecoratorAnimation} bind:this={paragraph}>
-			I'm a web developer from British Columbia, Canada. I specialize in designing and developing web experiences<br><br>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Let's talk over email.
+			<span style="text-decoration:underline"><br>I'm an aspiring software developer, currently in my final year, doing my major in Information Technology from IET-DAVV, Indore. <br><br>
+				Besides brainstorming on crazy ideas, you can also talk to me about Anime anytime, I'll be sure to reply if I'm alive.<br> Also, I'm a sweet-tooth~
 		</p>
 		<div class="social-button-wrapper">
 			<div bind:this={links}>
-				<span class="button" bind:this={emailLink}><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
-				<span class="button" bind:this={githubLink}><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>
+				<span class="button" bind:this={emailLink}><a href="mailto:itsraavann@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+				<span class="button" bind:this={githubLink}><a href="https://github.com/raavann" target="_blank" class="clickable sublink link">Github</a></span>
 			</div>
 		</div>
 	</div>
 	<div class="profile-image" bind:this={profilePicContainer}>
-		{#await loadImage("assets/imgs/profile-photo.jpg") then src}
-			<img bind:this={image} src="{src}" alt="Musab's Cover" class="profile-pic">
+		{#await loadImage("https://i.imgur.com/d5LUvCN.jpg") then src}
+			<img bind:this={image} src="{src}" alt="raavannProfile" class="profile-pic">
 		{/await}
 	</div>
 </div>
@@ -125,46 +130,66 @@ function section2IntroAnimations() {
 	{#await section2InViewPromise then _}
 		<ul class="list first">
 			<li class="list-title">
-				<div in:textAnimationIn={{ initDelay: 400 }}>Stuff i use a lot</div>
+				<div in:textAnimationIn={{ initDelay: 400 }}>Stuff i use a lot..</div>
 			</li>
 			<li>
 				<div in:textAnimationIn={{ initDelay: 550 }}>Front-end</div>
 				<div class="flex-item" in:maskAnimationIn={{ delay: 600 }}>
-					<img src="assets/imgs/svg-icons/angular.svg" alt="angular">
-					<img src="assets/imgs/svg-icons/svelte.svg" alt="svelte">
+
+					<i class="devicon-html5-plain"></i>
+					<i class="devicon-css3-plain"></i>
+					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-react-original"></i>
 				</div>
 			</li>
 			<li>
-				<div in:textAnimationIn={{ initDelay: 650 }}>Mobile</div>
+				<div in:textAnimationIn={{ initDelay: 650 }}>Libraries</div>
 				<div class="flex-item" in:maskAnimationIn={{ delay: 700 }}>
-					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">
-					<img src="assets/imgs/svg-icons/android.svg" alt="native android">
-					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">
+					<i class="devicon-threejs-original"></i>
 				</div>
 			</li>
 			<li>
 				<div in:textAnimationIn={{ initDelay: 750 }}>Back-end</div>
 				<div class="flex-item" in:maskAnimationIn={{ delay: 800 }}>
-					<img src="assets/imgs/svg-icons/firebase.svg" alt="firebase">
-					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">
-					<img src="assets/imgs/svg-icons/php.svg" alt="php">
-					<img src="assets/imgs/svg-icons/mysql.svg" alt="mySQL">
+
+					<i class="devicon-nodejs-plain"></i>
+					<i class="devicon-postgresql-plain"></i>
+					<i class="devicon-mongodb-plain"></i>					
+					<i class="devicon-express-original"></i>
+
+				</div>
+			</li>
+			<li>
+				<div in:textAnimationIn={{ initDelay: 850 }}>Languages</div>
+				<div class="flex-item" in:maskAnimationIn={{ delay: 900 }}>
+					<i class="devicon-cplusplus-plain"></i>
+					<i class="devicon-python-plain"></i>
+				</div>
+			</li>
+		</ul>
+
+		<ul class="list first">
+			<li class="list-title">
+				<div in:textAnimationIn={{ initDelay: 400 }}>Stuff i use somewhat..</div>
+			</li>
+			<li>
+				<div in:textAnimationIn={{ initDelay: 650 }}>Mobile</div>
+				<div class="flex-item" in:maskAnimationIn={{ delay: 700 }}>
+					<i class="devicon-kotlin-plain"></i>
+					<i class="devicon-flutter-plain"></i>
+				</div>
+			</li>
+			<li>
+				<div in:textAnimationIn={{ initDelay: 750 }}>Back-end</div>
+				<div class="flex-item" in:maskAnimationIn={{ delay: 800 }}>
+					<i style="font-size: 3rem" class="devicon-nginx-original"></i>
 				</div>
 			</li>
 			<li>
 				<div in:textAnimationIn={{ initDelay: 850 }}>Design</div>
 				<div class="flex-item" in:maskAnimationIn={{ delay: 900 }}>
-					<img src="assets/imgs/svg-icons/illustrator.svg" alt="adobe illustrator">
-					<img src="assets/imgs/svg-icons/xd.svg" alt="adobe xd">
+					<i class="devicon-figma-plain"></i>
 				</div>
-			</li>
-		</ul>
-		<ul class="list">
-			<li class="list-title">
-				<div in:textAnimationIn={{ initDelay: 400 }}>awards</div>
-			</li>
-			<li>
-				<div in:textAnimationIn={{ initDelay: 550 }}>1x — Awwwards Honors</div>
 			</li>
 		</ul>
 	{/await}
@@ -175,6 +200,9 @@ function section2IntroAnimations() {
 
 @import "../consts.sass"
 @include textStyles()
+
+i
+	font-size: 1.5rem
 
 #content-container.about
 	display: flex
