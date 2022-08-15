@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://use.typekit.net/goc4cow.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 
 html, body {
@@ -9,6 +10,16 @@ html, body {
 	height: 100%;
 }
 
+.smallText{
+	color: pink !important;
+	font-size: 2.5rem !important;
+	font-family: "Caveat", cursive !important;
+	rotate: 356deg !important;
+	text-align: center !important;
+	line-height: 0px !important;
+	text-decoration: underline !important;
+	letter-spacing: 3px;
+}
 body {
 	color: #333;
 	margin: 0;
